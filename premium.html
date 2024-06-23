@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Plan - DashWeb</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+        }
+
+        header h1 {
+            display: inline-block;
+            margin: 0;
+        }
+
+        header h1 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 2em;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section#premium-plan {
+            padding: 2em 0;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        section#premium-plan h2 {
+            padding-top: 100px;
+            margin-bottom: 1em;
+        }
+
+        .website-list {
+            display: none; /* Hide the list by default */
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <h1><a href="index.html" class="logo-link">DASHWEB</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="premium-plan">
+        <div class="container">
+            <h2>Premium Plan Websites</h2>
+            <p id="update-message">We are currently updating our Premium Plan offerings. Please check back soon for new and exciting website options. Thank you for your patience!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DashWeb. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to control the visibility of offers
+        document.addEventListener('DOMContentLoaded', function() {
+            var hasOffers = false; // Change this to true if there are offers available
+
+            var updateMessage = document.getElementById('update-message');
+            var websiteList = document.querySelector('.website-list');
+
+            if (hasOffers) {
+                updateMessage.style.display = 'none';
+                websiteList.style.display = 'block';
+            } else {
+                updateMessage.style.display = 'block';
+                websiteList.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
